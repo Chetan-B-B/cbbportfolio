@@ -17,7 +17,7 @@ const Hero = () => {
             <img
               src="/assets/hero-work-1.jpeg"
               alt="Dev"
-              className="inline-block w-32 h-20 rounded-xl shadow-lg align-middle object-cover object-top border-4 border-black "
+              className="inline-block w-32 h-20 rounded-xl shadow-lg align-middle object-cover object-top border-4 border-black mb-3 mr-3"
             />
             Developer
           </span>
@@ -39,17 +39,19 @@ const Hero = () => {
         </p>
 
         {/* Contact Section */}
-        <div className="space-y-4">
+        <div className="space-y-6">
           <div className="flex justify-center items-center space-x-2">
-            <span className="relative flex h-4 w-4">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-4 w-4 bg-blue-600"></span>
+            <span className=" bg-black flex justify-evenly items-center text-white py-2 px-4 rounded-xl font-semibold w-48 h-14">
+            <span className="relative flex h-4 w-4 ">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gray-500 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-4 w-4 bg-gray-600"></span>
             </span>
-            <p className="text-blue-600 font-semibold">Contact Me</p>
+              Contact Me
+            </span>
           </div>
-          <div className="text-center">
+          {/* <div className="text-center">
             <p className="text-xl font-medium text-gray-800">bbchetan16@gmail.com</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </main>
