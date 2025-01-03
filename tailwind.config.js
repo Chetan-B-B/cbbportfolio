@@ -7,6 +7,9 @@ export default {
         berkshire: ["Berkshire Swash", "sans-serif"],
         portfolio: ["Instrument Serif", "sans-serif"],
       },
+      screens: {
+        'about-floaters': { min: '600px', max: '900px' },
+      },
       borderRadius: {
         xl: "123px",
       },
