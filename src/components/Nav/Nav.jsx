@@ -8,7 +8,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="">
+    <nav className="sticky top-0 z-50 ">
       <div className="relative mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <a href="#" className="text-2xl font-bold text-gray-800 font-berkshire">
