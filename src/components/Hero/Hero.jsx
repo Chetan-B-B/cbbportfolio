@@ -1,23 +1,23 @@
 const Hero = () => {
   return (
-    <main className="min-h-screen flex flex-col justify-center items-center ">
-      <div className="max-w-4xl text-center px-6">
+    <main className="flex flex-col items-center justify-center min-h-screen ">
+      <div className="max-w-4xl px-6 text-center">
         {/* Hero Heading */}
         <h1 className="text-[5rem] font-normal font-portfolio leading-tight mb-6  ">
           <span className="block">
-            I&apos;m <span className="bg-gradient-to-r from-neutral-300 via-neutral-500 to-stone-400 bg-clip-text text-transparent italic">Chetan</span>
+            I&apos;m <span className="italic text-transparent bg-gradient-to-r from-neutral-300 via-neutral-500 to-stone-400 bg-clip-text">Chetan</span>
             <img
               src="/assets/hero-me.png"
               alt="Me"
-              className="inline-block w-32 h-20 rounded-xl shadow-lg align-middle object-cover border-4 border-black " 
+              className="inline-block object-cover w-32 h-20 align-middle border-4 border-black shadow-lg rounded-xl " 
             />,
           </span>
           <span className="block">
-            a <span className="bg-gradient-to-r from-neutral-300 via-neutral-500 to-stone-400 bg-clip-text text-transparent italic">Full Stack </span>
+            a <span className="italic text-transparent bg-gradient-to-r from-neutral-300 via-neutral-500 to-stone-400 bg-clip-text">Full Stack </span>
             <img
               src="/assets/hero-work-1.jpeg"
               alt="Dev"
-              className="inline-block w-32 h-20 rounded-xl shadow-lg align-middle object-cover object-top border-4 border-black mb-3 mr-3"
+              className="inline-block object-cover object-top w-32 h-20 mb-3 mr-3 align-middle border-4 border-black shadow-lg rounded-xl"
             />
             Developer
           </span>
@@ -26,13 +26,13 @@ const Hero = () => {
             <img
               src="/assets/bng.jpg"
               alt="Bengaluru"
-              className="inline-block w-32 h-20 rounded-xl shadow-lg align-middle object-cover object-bottom border-4 border-black "
+              className="inline-block object-cover object-bottom w-32 h-20 align-middle border-4 border-black shadow-lg rounded-xl "
             />
           </span>
         </h1>
 
         {/* Hero Subtext */}
-        <p className="text-lg text-gray-600 mb-8">
+        <p className="mb-8 text-lg text-gray-600">
           I have 3 years of experience crafting scalable backend solutions and
           automating infrastructure to deliver impactful, efficient products for
           businesses.
@@ -40,11 +40,11 @@ const Hero = () => {
 
         {/* Contact Section */}
         <div className="space-y-6">
-          <div className="flex justify-center items-center space-x-2">
-            <span className=" bg-black flex justify-evenly items-center text-white py-2 px-4 rounded-xl font-semibold w-48 h-14">
-            <span className="relative flex h-4 w-4 ">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gray-500 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-4 w-4 bg-gray-600"></span>
+          <div className="flex items-center justify-center space-x-2">
+            <span className="flex items-center w-48 px-4 py-2 font-semibold text-white bg-black justify-evenly rounded-xl h-14">
+            <span className="relative flex w-4 h-4 ">
+              <span className="absolute inline-flex w-full h-full bg-gray-500 rounded-full opacity-75 animate-ping"></span>
+              <span className="relative inline-flex w-4 h-4 bg-gray-600 rounded-full"></span>
             </span>
               Contact Me
             </span>

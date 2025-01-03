@@ -9,7 +9,7 @@ const Nav = () => {
 
   return (
     <nav className="sticky top-0 z-50 ">
-      <div className="relative mx-auto px-4 py-3 flex justify-between items-center">
+      <div className="relative flex items-center justify-between px-4 py-3 mx-auto">
         {/* Logo */}
         <a href="#" className="text-2xl font-bold text-gray-800 font-berkshire">
           CBB
@@ -18,17 +18,17 @@ const Nav = () => {
         {/* Hamburger Menu (for mobile) */}
         <button
           onClick={toggleMenu}
-          className=" text-gray-800 focus:outline-none"
+          className="text-gray-800  focus:outline-none"
         >
           <img
             src={isMenuOpen ? "assets/close.svg" : "assets/hambergur.png"}
             alt="toggle"
-            className=" bg-white w-10 h-10 rounded-full"
+            className="w-10 h-10 bg-white rounded-full "
           />
         </button>
 
         {/* Navigation Links (Desktop)
-        <div className="hidden lg:flex space-x-6">
+        <div className="hidden space-x-6 lg:flex">
           <a href="#" className="text-gray-700 hover:text-gray-900">
             Home
           </a>
@@ -46,20 +46,20 @@ const Nav = () => {
         {/* Mobile Menu */}
         {/* inset-y-14 right-12 */}
         {isMenuOpen && (
-          <div className="absolute top-16 right-12  bg-white shadow-lg  w-80 h-80  flex flex-col justify-around    font-semibold text-xl   rounded-tl-3xl rounded-tr-md rounded-bl-3xl  rounded-br-3xl  p-6">
+          <div className="absolute flex flex-col justify-around p-6 text-xl font-semibold bg-white shadow-lg top-16 right-12 w-80 h-80 rounded-tl-3xl rounded-tr-md rounded-bl-3xl rounded-br-3xl">
             <a href="#" className="text-gray-700 hover:text-gray-900">
               Home
             </a>
-            <a href="#" className="text-gray-700 hover:text-gray-900">
+            <a href="#about" className="text-gray-700 hover:text-gray-900">
               About
             </a>
-            <a href="#" className="text-gray-700 hover:text-gray-900">
+            <a href="#work" className="text-gray-700 hover:text-gray-900">
               Services
             </a>
-            <a href="#" className="text-gray-700 hover:text-gray-900">
+            <a href="#contact" className="text-gray-700 hover:text-gray-900">
               Contact
             </a>
-            <div className="flex justify-between  mt-4">
+            <div className="flex justify-between mt-4">
               <a
                 href="#"
                 className="text-gray-500 hover:text-gray-800"
@@ -68,7 +68,7 @@ const Nav = () => {
                 <img
                   src={"assets/twitter-alt.svg"}
                   alt="toggle"
-                  className=" w-10 h-10 rounded-full"
+                  className="w-10 h-10 rounded-full "
                 />
               </a>
               <a
@@ -79,7 +79,7 @@ const Nav = () => {
                 <img
                   src={"assets/LinkedIN.png"}
                   alt="toggle"
-                  className=" w-10 h-10 rounded-full"
+                  className="w-10 h-10 rounded-full "
                 />
               </a>
               <a
@@ -90,7 +90,7 @@ const Nav = () => {
                 <img
                   src={"assets/github.svg"}
                   alt="github"
-                  className=" w-10 h-10 rounded-full"
+                  className="w-10 h-10 rounded-full "
                 />
               </a>
             </div>

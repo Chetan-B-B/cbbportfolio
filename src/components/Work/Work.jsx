@@ -1,9 +1,9 @@
 const Work = () => {
   return (
-    <section id="work" className="min-h-screen py-12 px-6 ">
-      <div className="max-w-7xl mx-auto text-center">
+    <section id="work" className="min-h-screen px-6 py-12 ">
+      <div className="mx-auto text-center max-w-7xl">
         {/* Work Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           {[...Array(6)].map((_, index) => (
             <div key={index} className="group">
               {/* Card */}
@@ -12,24 +12,24 @@ const Work = () => {
                   <img
                     src="https://framerusercontent.com/images/afCvIGY60qx8bPPHVXLeOJZE.jpg"
                     alt={`Project ${index + 1}`}
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 object-cover w-full h-full"
                   />
                   <img
                     src="https://framerusercontent.com/images/t1JiwWZvW2qWT31Dsu8iwpfSXSo.jpg"
                     alt="Overlay"
-                    className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    className="absolute inset-0 object-cover w-full h-full transition-opacity duration-300 opacity-0 group-hover:opacity-100"
                   />
                 </div>
               </div>
               {/* Details Below Card */}
-              <div className="mt-4 flex justify-between">
+              <div className="flex justify-between mt-4">
                 <h3 className="text-lg font-bold text-gray-500 group-hover:text-gray-900">
                   Project {index + 1}
                 </h3>
 
-                <p className="text-gray-200 group-hover:text-black text-sm space-x-4 ">
-                  <span className="inline-block group-hover:bg-white bg-zinc-500 rounded-xl w-14 h-fit p-2  ">Web</span>
-                  <span className="inline-block rounded-xl w-14 h-fit bg-zinc-500  group-hover:bg-white p-2">Cloud</span>
+                <p className="space-x-4 text-sm text-gray-200 group-hover:text-black ">
+                  <span className="inline-block p-2 group-hover:bg-white bg-zinc-500 rounded-xl w-14 h-fit ">Web</span>
+                  <span className="inline-block p-2 rounded-xl w-14 h-fit bg-zinc-500 group-hover:bg-white">Cloud</span>
                 </p>
               </div>
             </div>
