@@ -9,7 +9,7 @@ const Nav = () => {
 
   return (
     <nav className="sticky top-0 z-50 ">
-      <div className="relative flex items-center justify-between px-4 py-3 mx-auto">
+      <div className="relative flex items-center justify-between px-4 py-3 mx-auto max-w-7xl">
         {/* Logo */}
         <a href="#" className="text-2xl font-bold text-gray-800 font-berkshire">
           CBB
@@ -18,7 +18,7 @@ const Nav = () => {
         {/* Hamburger Menu (for mobile) */}
         <button
           onClick={toggleMenu}
-          className="text-gray-800  focus:outline-none"
+          className="text-gray-800 focus:outline-none"
         >
           <img
             src={isMenuOpen ? "assets/close.svg" : "assets/hambergur.png"}

@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        "footer-texture": "url('https://framerusercontent.com/images/6mcf62RlDfRfU61Yg5vb2pefpi4.png')",
+      },
       fontFamily: {
         berkshire: ["Berkshire Swash", "sans-serif"],
         portfolio: ["Instrument Serif", "sans-serif"],
