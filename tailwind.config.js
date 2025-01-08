@@ -5,6 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         "footer-texture": "url('https://framerusercontent.com/images/6mcf62RlDfRfU61Yg5vb2pefpi4.png')",
+        'dark-gradient': 'radial-gradient(100% 100% at 0% 0%, #2e2e2e 0%, rgb(0, 0, 0))',
       },
       fontFamily: {
         berkshire: ["Berkshire Swash", "sans-serif"],
