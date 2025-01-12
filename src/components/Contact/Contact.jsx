@@ -18,8 +18,10 @@ const Contact = () => {
       <div
         className="absolute z-10 w-[900px] h-full left-[215px]"
         style={{
-          backgroundImage: "linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 83.9344%, rgba(255, 255, 255, 0) 100%)",
-          maskImage: "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20.0362%, rgba(0, 0, 0, 0) 36.175%, rgb(0, 0, 0) 55.4054%, rgba(0, 0, 0, 0.13) 67.1171%, rgb(0, 0, 0) 78.2306%, rgba(0, 0, 0, 0) 97.2973%)",
+          backgroundImage:
+            "linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 83.9344%, rgba(255, 255, 255, 0) 100%)",
+          maskImage:
+            "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20.0362%, rgba(0, 0, 0, 0) 36.175%, rgb(0, 0, 0) 55.4054%, rgba(0, 0, 0, 0.13) 67.1171%, rgb(0, 0, 0) 78.2306%, rgba(0, 0, 0, 0) 97.2973%)",
           opacity: 0.05,
           transform: "skewX(45deg)",
         }}
@@ -49,66 +51,56 @@ const Contact = () => {
 
         {/* Description */}
         <p className="max-w-md mx-auto mt-4 text-lg font-light text-gray-400 md:text-2xl">
-          Feel free to contact me if you have any questions.<br/> I&apos;m available for new
-          projects or just for chatting.
+          Feel free to contact me if you have any questions.
+          <br /> I&apos;m available for new projects or just for chatting.
         </p>
 
         {/* Contact Button */}
         <div className="mt-8">
           <a
-            href="#"
+            href="mailto:bbchetan16@gmail.com"
             className="relative inline-flex items-center justify-center gap-2 px-8 py-3 text-lg font-extrabold tracking-wider text-white transition-all bg-black rounded-full shadow-lg cursor-pointer ring-8 ring-stone-600  hover:bg-[#62606040]"
           >
-            {/* hover:ring-gray-300 */}
             Contact Me
             <span className="">
-              <img src="assets/arraow.svg" alt="arraow.svg"
-              className="w-5 h-5 "
-              />
+              <img src="assets/arraow.svg" alt="arraow.svg" className="w-5 h-5 " />
             </span>
           </a>
         </div>
       </div>
 
       {/* Social Icons */}
-      <div className="z-10 flex items-center justify-between mx-auto mt-12 ">
-  {/* Name Label */}
-  <div className="ml-auto">
-    <p className="px-4 py-2 text-sm italic font-bold text-gray-800 bg-white rounded-full">
-      Chetan BB
-    </p>
-  </div>
-  
-  {/* Social Icons */}
-  <div className="flex items-center gap-6">
-    {/* X (Twitter) */}
-    <a
-      href="#"
-      className="flex items-center justify-center w-10 h-10 transition-all border border-gray-600 rounded-full hover:border-gray-300"
-    >
-      <i className="text-gray-400 fab fa-twitter"></i>
-    </a>
+      <div className="z-10 flex items-center justify-between w-full mt-36 max-w-7xl ">
+        {/* Name Label */}
+        <p className="px-4 py-2 text-sm italic font-bold text-gray-800 bg-white rounded-full">Chetan BB</p>
 
-    {/* LinkedIn */}
-    <a
-      href="#"
-      className="flex items-center justify-center w-10 h-10 transition-all border border-gray-600 rounded-full hover:border-gray-300"
-    >
-      <i className="text-gray-400 fab fa-linkedin-in"></i>
-    </a>
+        {/* Social Icons */}
+        <div className="flex items-center gap-6">
+          {/* X (Twitter) */}
+          <a
+            href="#"
+            className="flex items-center justify-center w-10 h-10 transition-all border border-gray-600 rounded-full hover:border-gray-300"
+          >
+            <i className="text-gray-400 fab fa-twitter"></i>
+          </a>
 
-    {/* Instagram */}
-    <a
-      href="#"
-      className="flex items-center justify-center w-10 h-10 transition-all border border-gray-600 rounded-full hover:border-gray-300"
-    >
-      <i className="text-gray-400 fab fa-instagram"></i>
-    </a>
-  </div>
-</div>
+          {/* LinkedIn */}
+          <a
+            href="#"
+            className="flex items-center justify-center w-10 h-10 transition-all border border-gray-600 rounded-full hover:border-gray-300"
+          >
+            <i className="text-gray-400 fab fa-linkedin-in"></i>
+          </a>
 
-
-      
+          {/* Instagram */}
+          <a
+            href="#"
+            className="flex items-center justify-center w-10 h-10 transition-all border border-gray-600 rounded-full hover:border-gray-300"
+          >
+            <i className="text-gray-400 fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
     </section>
   );
 };
