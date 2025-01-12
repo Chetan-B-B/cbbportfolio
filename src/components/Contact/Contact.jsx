@@ -57,10 +57,15 @@ const Contact = () => {
         <div className="mt-8">
           <a
             href="#"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3 text-lg font-medium text-white transition-all bg-black rounded-full shadow-lg cursor-pointer hover:bg-gray-700"
+            className="relative inline-flex items-center justify-center gap-2 px-8 py-3 text-lg font-extrabold tracking-wider text-white transition-all bg-black rounded-full shadow-lg cursor-pointer ring-8 ring-stone-600  hover:bg-[#00000040]"
           >
+            {/* hover:ring-gray-300 */}
             Contact Me
-            <span className="material-icons">arrow_outward</span>
+            <span className="">
+              <img src="assets/arraow.svg" alt="arraow.svg"
+              className="w-5 h-5 "
+              />
+            </span>
           </a>
         </div>
       </div>
