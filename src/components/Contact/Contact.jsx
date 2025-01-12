@@ -57,7 +57,7 @@ const Contact = () => {
         <div className="mt-8">
           <a
             href="#"
-            className="relative inline-flex items-center justify-center gap-2 px-8 py-3 text-lg font-extrabold tracking-wider text-white transition-all bg-black rounded-full shadow-lg cursor-pointer ring-8 ring-stone-600  hover:bg-[#00000040]"
+            className="relative inline-flex items-center justify-center gap-2 px-8 py-3 text-lg font-extrabold tracking-wider text-white transition-all bg-black rounded-full shadow-lg cursor-pointer ring-8 ring-stone-600  hover:bg-[#62606040]"
           >
             {/* hover:ring-gray-300 */}
             Contact Me
@@ -71,38 +71,44 @@ const Contact = () => {
       </div>
 
       {/* Social Icons */}
-      <div className="flex items-center gap-6 mt-12">
-        {/* X (Twitter) */}
-        <a
-          href="#"
-          className="flex items-center justify-center w-10 h-10 transition-all border border-gray-600 rounded-full hover:border-gray-300"
-        >
-          <i className="text-gray-400 fab fa-twitter"></i>
-        </a>
+      <div className="z-10 flex items-center justify-between mx-auto mt-12 ">
+  {/* Name Label */}
+  <div className="ml-auto">
+    <p className="px-4 py-2 text-sm italic font-bold text-gray-800 bg-white rounded-full">
+      Chetan BB
+    </p>
+  </div>
+  
+  {/* Social Icons */}
+  <div className="flex items-center gap-6">
+    {/* X (Twitter) */}
+    <a
+      href="#"
+      className="flex items-center justify-center w-10 h-10 transition-all border border-gray-600 rounded-full hover:border-gray-300"
+    >
+      <i className="text-gray-400 fab fa-twitter"></i>
+    </a>
 
-        {/* LinkedIn */}
-        <a
-          href="#"
-          className="flex items-center justify-center w-10 h-10 transition-all border border-gray-600 rounded-full hover:border-gray-300"
-        >
-          <i className="text-gray-400 fab fa-linkedin-in"></i>
-        </a>
+    {/* LinkedIn */}
+    <a
+      href="#"
+      className="flex items-center justify-center w-10 h-10 transition-all border border-gray-600 rounded-full hover:border-gray-300"
+    >
+      <i className="text-gray-400 fab fa-linkedin-in"></i>
+    </a>
 
-        {/* Instagram */}
-        <a
-          href="#"
-          className="flex items-center justify-center w-10 h-10 transition-all border border-gray-600 rounded-full hover:border-gray-300"
-        >
-          <i className="text-gray-400 fab fa-instagram"></i>
-        </a>
-      </div>
+    {/* Instagram */}
+    <a
+      href="#"
+      className="flex items-center justify-center w-10 h-10 transition-all border border-gray-600 rounded-full hover:border-gray-300"
+    >
+      <i className="text-gray-400 fab fa-instagram"></i>
+    </a>
+  </div>
+</div>
 
-      {/* Name Label */}
-      <div className="absolute transform -translate-x-1/2 bottom-8 left-1/2">
-        <p className="px-4 py-2 text-sm italic font-light text-white rounded-full bg-white/10">
-          Hanzo Hattori
-        </p>
-      </div>
+
+      
     </section>
   );
 };

@@ -11,7 +11,7 @@ const Nav = () => {
     <nav className="sticky top-0 z-50 ">
       <div className="relative flex items-center justify-between px-4 py-3 mx-auto max-w-7xl">
         {/* Logo */}
-        <a href="#" className="text-2xl font-bold text-gray-800 font-berkshire">
+        <a href="#" className="w-20 h-10 p-1 text-2xl font-bold text-center text-gray-800 bg-white rounded-xl font-berkshire">
           CBB
         </a>
 
