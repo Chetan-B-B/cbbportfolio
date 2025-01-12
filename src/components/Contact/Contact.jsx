@@ -13,19 +13,25 @@ const Contact = () => {
             "radial-gradient(125% 100% at 0% 0%, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.224) 88.2883%, rgba(0, 0, 0, 0) 100%)",
           opacity: 1,
         }}
-      >
+      ></div>
 
-      </div>
-        <div className="absolute z-10 w-[900px] h-full left-[215px] " style={{
-          backgroundImage: "linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 83.9344%, rgba(255, 255, 255,0) 100%)",
+      <div
+        className="absolute z-10 w-[900px] h-full left-[215px]"
+        style={{
+          backgroundImage: "linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 83.9344%, rgba(255, 255, 255, 0) 100%)",
           maskImage: "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20.0362%, rgba(0, 0, 0, 0) 36.175%, rgb(0, 0, 0) 55.4054%, rgba(0, 0, 0, 0.13) 67.1171%, rgb(0, 0, 0) 78.2306%, rgba(0, 0, 0, 0) 97.2973%)",
           opacity: 0.05,
-          transform:' skewX(45deg)'
-      }}></div>
-      <div className="absolute w-full h-full bg-left-top bg-repeat bg-footer-texture bg-blend-lighten -z-10" ></div>
+          transform: "skewX(45deg)",
+        }}
+      ></div>
+
+      <div
+        className="absolute w-full h-full bg-left-top bg-repeat bg-footer-texture bg-blend-overlay -z-10"
+        style={{ backgroundColor: "#000", mixBlendMode: "overlay", opacity: 0.8 }}
+      ></div>
 
       {/* Main Content */}
-      <div className="px-6 mx-auto text-center max-w-7xl">
+      <div className="z-10 px-6 mx-auto text-center max-w-7xl">
         {/* Subtitle */}
         <div className="mb-10 text-center">
           <div className="flex items-center justify-center space-x-3">
@@ -36,14 +42,14 @@ const Contact = () => {
         </div>
 
         {/* Title */}
-        <h2 className="text-5xl font-bold md:text-6xl">
+        <h2 className="text-5xl font-normal md:text-8xl">
           <span className="text-white">Let&apos;s</span>{" "}
           <span className="italic text-gray-400">Connect</span>
         </h2>
 
         {/* Description */}
-        <p className="max-w-md mx-auto mt-4 text-lg font-light text-gray-400">
-          Feel free to contact me if you have any questions. I&apos;m available for new
+        <p className="max-w-md mx-auto mt-4 text-lg font-light text-gray-400 md:text-2xl">
+          Feel free to contact me if you have any questions.<br/> I&apos;m available for new
           projects or just for chatting.
         </p>
 
@@ -51,7 +57,7 @@ const Contact = () => {
         <div className="mt-8">
           <a
             href="#"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3 text-lg font-medium text-white transition-all bg-gray-800 rounded-full shadow-lg hover:bg-gray-700"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 text-lg font-medium text-white transition-all bg-black rounded-full shadow-lg cursor-pointer hover:bg-gray-700"
           >
             Contact Me
             <span className="material-icons">arrow_outward</span>
