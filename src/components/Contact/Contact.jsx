@@ -70,7 +70,7 @@ const Contact = () => {
       </div>
 
       {/* Social Icons */}
-      <div className="z-10 flex items-center justify-between w-full mt-36 max-w-7xl ">
+      <div className="z-10 flex flex-col items-center justify-between w-full mt-32 space-y-10 md:flex-row max-w-7xl ">
         {/* Name Label */}
         <p className="h-10 p-1 text-lg italic font-bold text-center text-gray-800 bg-white w-28 rounded-xl font-berkshire">
           Chetan BB
