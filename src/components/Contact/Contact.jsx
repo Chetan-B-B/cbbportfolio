@@ -70,9 +70,9 @@ const Contact = () => {
       </div>
 
       {/* Social Icons */}
-      <div className="z-10 flex flex-col items-center justify-between w-full mt-32 space-y-10 md:flex-row max-w-7xl ">
+      <div className="z-10 flex flex-col items-center justify-between w-full gap-8 mt-32 md:flex-row md:gap-0 max-w-7xl ">
         {/* Name Label */}
-        <p className="h-10 p-1 text-lg italic font-bold text-center text-gray-800 bg-white w-28 rounded-xl font-berkshire">
+        <p className="h-10 p-1 text-lg font-bold text-center text-gray-800 bg-white w-28 rounded-xl font-berkshire">
           Chetan BB
         </p>
 
@@ -80,8 +80,9 @@ const Contact = () => {
         <div className="flex items-center gap-6">
           {/* X (Twitter) */}
           <a
-            href="#"
+            href="https://x.com/Chetan_B_B"
             className="flex items-center justify-center w-10 h-10 transition-all border border-gray-600 rounded-full hover:border-gray-300"
+            target="_blank"
           >
             <img
               src="assets/twitter-alt.svg"
@@ -92,7 +93,8 @@ const Contact = () => {
 
           {/* LinkedIn */}
           <a
-            href="#"
+            href="https://www.linkedin.com/in/chetan-bb/"
+            target="_blank"
             className="flex items-center justify-center w-10 h-10 transition-all border border-gray-600 rounded-full hover:border-gray-300"
           >
             <img
@@ -104,8 +106,9 @@ const Contact = () => {
 
           {/* GitHub */}
           <a
-            href="#"
+            href="https://github.com/Chetan-B-B"
             className="flex items-center justify-center w-10 h-10 transition-all border border-gray-600 rounded-full hover:border-gray-300"
+            target="_blank"
           >
             <img
               src="assets/github.svg"

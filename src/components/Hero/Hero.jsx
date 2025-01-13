@@ -51,9 +51,9 @@ const Hero = () => {
         </p>
 
         {/* Contact Section */}
-        <div className="space-y-6">
-          <div className="flex items-center justify-center space-x-2">
-            <span className="flex items-center w-48 px-4 py-2 font-semibold text-white bg-black justify-evenly rounded-xl h-14">
+        <div className="space-y-6 ">
+          <div className="flex items-center justify-center space-x-2 ">
+            <span className="flex items-center w-48 px-4 py-2 font-semibold text-white bg-black justify-evenly rounded-xl h-14 ring-gray-300 ring-8">
             <span className="relative flex w-4 h-4 ">
               <span className="absolute inline-flex w-full h-full bg-gray-500 rounded-full opacity-75 animate-ping"></span>
               <span className="relative inline-flex w-4 h-4 bg-gray-600 rounded-full"></span>

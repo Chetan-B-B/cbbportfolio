@@ -62,9 +62,10 @@ const Nav = () => {
             </a>
             <div className="flex justify-between mt-4">
               <a
-                href="#"
+                href="https://x.com/Chetan_B_B"
                 className="text-gray-500 hover:text-gray-800"
                 aria-label="Twitter"
+                target="_blank"
               >
                 <img
                   src={"assets/twitter-alt.svg"}
@@ -73,9 +74,10 @@ const Nav = () => {
                 />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/chetan-bb/"
                 className="text-gray-500 hover:text-gray-800"
                 aria-label="LinkedIn"
+                target="_blank"
               >
                 <img
                   src={"assets/LinkedIN.png"}
@@ -84,9 +86,10 @@ const Nav = () => {
                 />
               </a>
               <a
-                href="#"
+                href="https://github.com/Chetan-B-B"
                 className="text-gray-500 hover:text-gray-800"
                 aria-label="Github"
+                target="_blank"
               >
                 <img
                   src={"assets/github.svg"}
