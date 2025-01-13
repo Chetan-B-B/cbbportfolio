@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="relative flex flex-col items-center justify-center min-h-screen text-white bg-black font-portfolio"
+      className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden text-white bg-black font-portfolio"
     >
       {/* Spotlight Effect */}
       <div
@@ -72,7 +72,9 @@ const Contact = () => {
       {/* Social Icons */}
       <div className="z-10 flex items-center justify-between w-full mt-36 max-w-7xl ">
         {/* Name Label */}
-        <p className="h-10 p-1 text-lg italic font-bold text-center text-gray-800 bg-white w-28 rounded-xl font-berkshire">Chetan BB</p>
+        <p className="h-10 p-1 text-lg italic font-bold text-center text-gray-800 bg-white w-28 rounded-xl font-berkshire">
+          Chetan BB
+        </p>
 
         {/* Social Icons */}
         <div className="flex items-center gap-6">
@@ -81,11 +83,11 @@ const Contact = () => {
             href="#"
             className="flex items-center justify-center w-10 h-10 transition-all border border-gray-600 rounded-full hover:border-gray-300"
           >
-             <img
-                  src={"assets/twitter-alt.svg"}
-                  alt="toggle"
-                  className="w-10 h-10 rounded-full "
-                />
+            <img
+              src="assets/twitter-alt.svg"
+              alt="Twitter"
+              className="w-6 h-6 filter brightness-0 invert"
+            />
           </a>
 
           {/* LinkedIn */}
@@ -93,23 +95,23 @@ const Contact = () => {
             href="#"
             className="flex items-center justify-center w-10 h-10 transition-all border border-gray-600 rounded-full hover:border-gray-300"
           >
-           <img
-                  src={"assets/linkedin-white.png"}
-                  alt="toggle"
-                  className="w-8 h-8 rounded-full "
-                />
+            <img
+              src="assets/linkedin-white.png"
+              alt="LinkedIn"
+              className="w-8 h-8"
+            />
           </a>
 
-          {/* Instagram */}
+          {/* GitHub */}
           <a
             href="#"
             className="flex items-center justify-center w-10 h-10 transition-all border border-gray-600 rounded-full hover:border-gray-300"
           >
-             <img
-                  src={"assets/github.svg"}
-                  alt="github"
-                  className="w-10 h-10 rounded-full "
-                />
+            <img
+              src="assets/github.svg"
+              alt="GitHub"
+              className="w-8 h-8 filter brightness-0 invert"
+            />
           </a>
         </div>
       </div>
