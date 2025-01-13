@@ -18,13 +18,14 @@ const Nav = () => {
         {/* Hamburger Menu (for mobile) */}
         <button
           onClick={toggleMenu}
-          className="text-gray-800 focus:outline-none"
+          className="w-12 h-12 text-gray-800 bg-white rounded-full focus:outline-none group"
         >
-          <img
-            src={isMenuOpen ? "assets/close.svg" : "assets/hambergur.png"}
-            alt="toggle"
-            className="w-10 h-10 bg-white rounded-full "
-          />
+         <div className="grid justify-items-center gap-1.5">
+            <span className={`h-1 w-8 rounded-full bg-black transition-transform ${isMenuOpen ? "rotate-45 duration-[0.8s] translate-y-2.5" : "duration-[0.8s]"}`}/>
+            <span className={`h-1 w-8 rounded-full bg-black transition-transform ${isMenuOpen ? "scale-x-0 duration-[0.8s]" : "duration-[0.8s]" }`}/>
+            <span className={`h-1 w-8 rounded-full bg-black transition-transform ${ isMenuOpen ? "-rotate-45 -translate-y-2.5 duration-[0.8s]" : "duration-[0.8s]"}`}/>
+          </div>
+
         </button>
 
         {/* Navigation Links (Desktop)

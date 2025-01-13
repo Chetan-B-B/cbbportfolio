@@ -1,6 +1,18 @@
 const Hero = () => {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen ">
+      {/* //TODO This is the  gradient effect , it is incomplete you can continue if you want*/}
+        {/* <div
+        className="absolute z-10 w-[900px] h-full left-[215px]"
+        style={{
+          backgroundImage:
+            "radial-gradient(100% 100% at 0% 0%, #ffffff 0%,  rgb(219, 219, 219) 100%)",
+          maskImage:
+            "radial-gradient(125% 100% at 0% 0%, #000000 0%, rgba(0, 0, 0, .22449) 88.28828828828829%, rgba(0, 0, 0, 0) 100%)",
+          opacity: 0.05,
+          transform: "skewX(45deg)",
+        }}
+      ></div> */}
       <div className="max-w-4xl px-6 text-center">
         {/* Hero Heading */}
         <h1 className="text-[5rem] font-normal font-portfolio leading-tight mb-6  ">
