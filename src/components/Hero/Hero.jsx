@@ -46,7 +46,7 @@ const Hero = () => {
               <span className="absolute inline-flex w-full h-full bg-gray-500 rounded-full opacity-75 animate-ping"></span>
               <span className="relative inline-flex w-4 h-4 bg-gray-600 rounded-full"></span>
             </span>
-              Contact Me
+              <a href="#contact">Contact Me</a>
             </span>
           </div>
           {/* <div className="text-center">
