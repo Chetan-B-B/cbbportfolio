@@ -72,7 +72,7 @@ const Contact = () => {
       {/* Social Icons */}
       <div className="z-10 flex items-center justify-between w-full mt-36 max-w-7xl ">
         {/* Name Label */}
-        <p className="px-4 py-2 text-sm italic font-bold text-gray-800 bg-white rounded-full">Chetan BB</p>
+        <p className="h-10 p-1 text-lg italic font-bold text-center text-gray-800 bg-white w-28 rounded-xl font-berkshire">Chetan BB</p>
 
         {/* Social Icons */}
         <div className="flex items-center gap-6">
@@ -81,7 +81,11 @@ const Contact = () => {
             href="#"
             className="flex items-center justify-center w-10 h-10 transition-all border border-gray-600 rounded-full hover:border-gray-300"
           >
-            <i className="text-gray-400 fab fa-twitter"></i>
+             <img
+                  src={"assets/twitter-alt.svg"}
+                  alt="toggle"
+                  className="w-10 h-10 rounded-full "
+                />
           </a>
 
           {/* LinkedIn */}
@@ -89,7 +93,11 @@ const Contact = () => {
             href="#"
             className="flex items-center justify-center w-10 h-10 transition-all border border-gray-600 rounded-full hover:border-gray-300"
           >
-            <i className="text-gray-400 fab fa-linkedin-in"></i>
+           <img
+                  src={"assets/linkedin-white.png"}
+                  alt="toggle"
+                  className="w-8 h-8 rounded-full "
+                />
           </a>
 
           {/* Instagram */}
@@ -97,7 +105,11 @@ const Contact = () => {
             href="#"
             className="flex items-center justify-center w-10 h-10 transition-all border border-gray-600 rounded-full hover:border-gray-300"
           >
-            <i className="text-gray-400 fab fa-instagram"></i>
+             <img
+                  src={"assets/github.svg"}
+                  alt="github"
+                  className="w-10 h-10 rounded-full "
+                />
           </a>
         </div>
       </div>
