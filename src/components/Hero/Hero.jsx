@@ -19,9 +19,9 @@ const Hero = () => {
           <span className="block">
             I&apos;m <span className="italic text-transparent bg-gradient-to-r from-neutral-300 via-neutral-500 to-stone-400 bg-clip-text">Chetan</span>
             <img
-              src="/assets/hero-me-4.png"
+              src="/assets/hero-me-6.png"
               alt="Me"
-              className="inline-block object-cover object-top w-32 h-20 align-middle border-4 border-black shadow-lg rounded-xl " 
+              className="inline-block object-contain w-32 h-20 align-middle bg-[#c3c8d7] border-4 border-black shadow-lg rounded-xl " 
             />,
           </span>
           <span className="block">
