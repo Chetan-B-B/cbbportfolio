@@ -38,7 +38,7 @@ const Hero = () => {
             <img
               src="/assets/bng.jpg"
               alt="Bengaluru"
-              className="inline-block object-cover object-bottom w-32 h-20 align-middle border-4 border-black shadow-lg rounded-xl "
+              className="inline-block object-fill object-bottom w-32 h-20 align-middle border-4 border-black shadow-lg rounded-xl "
             />
           </span>
         </h1>
