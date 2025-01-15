@@ -18,7 +18,7 @@ const Nav = () => {
         {/* Hamburger Menu (for mobile) */}
         <button
           onClick={toggleMenu}
-          className="w-12 h-12 text-gray-800 bg-white rounded-full focus:outline-none group"
+          className="text-gray-800 bg-white rounded-full w-11 h-11 focus:outline-none group"
         >
          <div className="grid justify-items-center gap-1.5">
             <span className={`h-1 w-8 rounded-full bg-black transition-transform ${isMenuOpen ? "rotate-45 duration-[0.8s] translate-y-2.5" : "duration-[0.8s]"}`}/>
@@ -62,18 +62,6 @@ const Nav = () => {
             </a>
             <div className="flex justify-between mt-4">
               <a
-                href="https://x.com/Chetan_B_B"
-                className="text-gray-500 hover:text-gray-800"
-                aria-label="Twitter"
-                target="_blank"
-              >
-                <img
-                  src={"assets/twitter-alt.svg"}
-                  alt="toggle"
-                  className="w-10 h-10 rounded-full "
-                />
-              </a>
-              <a
                 href="https://www.linkedin.com/in/chetan-bb/"
                 className="text-gray-500 hover:text-gray-800"
                 aria-label="LinkedIn"
@@ -94,6 +82,18 @@ const Nav = () => {
                 <img
                   src={"assets/github.svg"}
                   alt="github"
+                  className="w-10 h-10 rounded-full "
+                />
+              </a>
+              <a
+                href="https://x.com/Chetan_B_B"
+                className="text-gray-500 hover:text-gray-800"
+                aria-label="Twitter"
+                target="_blank"
+              >
+                <img
+                  src={"assets/twitter-alt.svg"}
+                  alt="toggle"
                   className="w-10 h-10 rounded-full "
                 />
               </a>

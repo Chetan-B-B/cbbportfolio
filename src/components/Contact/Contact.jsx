@@ -78,19 +78,6 @@ const Contact = () => {
 
         {/* Social Icons */}
         <div className="flex items-center gap-6">
-          {/* X (Twitter) */}
-          <a
-            href="https://x.com/Chetan_B_B"
-            className="flex items-center justify-center w-10 h-10 transition-all border border-gray-600 rounded-full hover:border-gray-300"
-            target="_blank"
-          >
-            <img
-              src="assets/twitter-alt.svg"
-              alt="Twitter"
-              className="w-6 h-6 filter brightness-0 invert"
-            />
-          </a>
-
           {/* LinkedIn */}
           <a
             href="https://www.linkedin.com/in/chetan-bb/"
@@ -114,6 +101,18 @@ const Contact = () => {
               src="assets/github.svg"
               alt="GitHub"
               className="w-8 h-8 filter brightness-0 invert"
+            />
+          </a>
+          {/* X (Twitter) */}
+          <a
+            href="https://x.com/Chetan_B_B"
+            className="flex items-center justify-center w-10 h-10 transition-all border border-gray-600 rounded-full hover:border-gray-300"
+            target="_blank"
+          >
+            <img
+              src="assets/twitter-alt.svg"
+              alt="Twitter"
+              className="w-6 h-6 filter brightness-0 invert"
             />
           </a>
         </div>
