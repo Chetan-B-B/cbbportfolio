@@ -1,4 +1,29 @@
+import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
 const Hero = () => {
+  const heroRef = useRef();
+  const imageRef = useRef();
+
+  useGSAP(() => {
+    gsap.fromTo(
+      heroRef.current.querySelectorAll(".animate"), // Select elements with the 'animate' class within heroRef
+      {
+        opacity: 0, // Start with opacity 0
+        y: 50,      // Start below their original position
+      },
+      {
+        opacity: 1, // End with opacity 1
+        y: 0,       // Move to their original position
+        duration: 1, // Animation duration for each element
+        stagger: 0.2, // Add a stagger effect for a cascading appearance
+        ease: "power3.out", // Smooth easing
+      }
+    )
+
+  });
+
   return (
     <main className="flex flex-col items-center justify-center min-h-screen ">
       {/* //TODO This is the  gradient effect , it is incomplete you can continue if you want*/}
@@ -15,21 +40,22 @@ const Hero = () => {
       ></div> */}
       <div className="max-w-4xl px-6 text-center">
         {/* Hero Heading */}
-        <h1 className="text-[5rem] font-normal font-portfolio leading-tight mb-6  ">
+        <h1 className="text-[5rem] font-normal font-portfolio leading-tight mb-6 animate">
           <span className="block">
             I&apos;m <span className="italic text-transparent bg-gradient-to-r from-neutral-300 via-neutral-500 to-stone-400 bg-clip-text">Chetan</span>
             <img
               src="/assets/hero-me-6.png"
               alt="Me"
-              className="inline-block object-contain w-32 h-20 align-middle bg-[#c3c8d7] border-4 border-black shadow-lg rounded-xl " 
+              className="inline-block object-contain w-32 h-20 align-middle bg-[#c3c8d7] border-4 border-black shadow-lg rounded-xl"
             />,
           </span>
           <span className="block">
             a <span className="italic text-transparent bg-gradient-to-r from-neutral-300 via-neutral-500 to-stone-400 bg-clip-text">Full Stack </span>
             <img
+            ref={imageRef}  
               src="/assets/hero-work-1.jpeg"
               alt="Dev"
-              className="inline-block object-cover object-top w-32 h-20 mb-3 mr-3 align-middle border-4 border-black shadow-lg rounded-xl"
+              className="inline-block object-cover object-top w-32 h-20 mb-3 mr-3 align-middle transition-transform border-4 border-black shadow-lg rounded-xl"
             />
             Developer
           </span>
@@ -38,20 +64,20 @@ const Hero = () => {
             <img
               src="/assets/bng.jpg"
               alt="Bengaluru"
-              className="inline-block object-fill object-bottom w-32 h-20 align-middle border-4 border-black shadow-lg rounded-xl "
+              className="inline-block object-fill object-bottom w-32 h-20 align-middle border-4 border-black shadow-lg rounded-xl"
             />
           </span>
         </h1>
 
         {/* Hero Subtext */}
-        <p className="mb-8 text-lg text-gray-600">
+        <p className="mb-8 text-lg text-gray-600 animate">
           I have 3 years of experience crafting scalable backend solutions and
           automating infrastructure to deliver impactful, efficient products for
           businesses.
         </p>
 
         {/* Contact Section */}
-        <div className="space-y-6 ">
+        <div className="space-y-6 animate">
           <div className="flex items-center justify-center space-x-2 ">
             <span className="flex items-center w-48 px-4 py-2 font-semibold text-white bg-black justify-evenly rounded-xl h-14 ring-gray-300 ring-8">
             <span className="relative flex w-4 h-4 ">
@@ -61,9 +87,6 @@ const Hero = () => {
               <a href="#contact">Contact Me</a>
             </span>
           </div>
-          {/* <div className="text-center">
-            <p className="text-xl font-medium text-gray-800">bbchetan16@gmail.com</p>
-          </div> */}
         </div>
       </div>
     </main>
