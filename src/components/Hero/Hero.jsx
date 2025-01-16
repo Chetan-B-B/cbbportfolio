@@ -22,10 +22,26 @@ const Hero = () => {
       }
     )
 
+     // Animate image transitions
+     const images = [
+      "/assets/hero-work-1.jpeg",
+      "/assets/hero-work-3.jpeg",
+    ]; // Add the paths of the images you want to cycle through
+    let currentImageIndex = 0;
+
+    gsap.to(imageRef.current, {
+      duration: 3,
+      repeat: -1,
+      onRepeat: () => {
+        currentImageIndex = (currentImageIndex + 1) % images.length; // Cycle through the images
+        imageRef.current.src = images[currentImageIndex];
+      },
+    })
+  
   });
 
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen ">
+    <main ref={heroRef} className="flex flex-col items-center justify-center min-h-screen ">
       {/* //TODO This is the  gradient effect , it is incomplete you can continue if you want*/}
         {/* <div
         className="absolute z-10 w-[900px] h-full left-[215px]"
