@@ -1,15 +1,36 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { useRef } from "react";
 import { useState } from "react";
+
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navRef = useRef();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  useGSAP(() => {
+    // Nav Animation
+    gsap.fromTo(
+      navRef.current,
+      {
+        opacity: 0,
+        y: -100,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power3.out",
+      })
+  });
   return (
     <nav className="sticky top-0 z-50 ">
-      <div className="relative flex items-center justify-between px-4 py-3 mx-auto max-w-7xl">
+      <div ref={navRef} className="relative flex items-center justify-between px-4 py-3 mx-auto max-w-7xl">
         {/* Logo */}
         <a href="#" className="w-20 h-10 p-1 text-2xl font-bold text-center text-gray-800 bg-white rounded-xl font-berkshire">
           CBB

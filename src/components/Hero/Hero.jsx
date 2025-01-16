@@ -11,7 +11,7 @@ const Hero = () => {
       heroRef.current.querySelectorAll(".animate"), // Select elements with the 'animate' class within heroRef
       {
         opacity: 0, // Start with opacity 0
-        y: 50,      // Start below their original position
+        y: 100,      // Start below their original position
       },
       {
         opacity: 1, // End with opacity 1
@@ -20,24 +20,27 @@ const Hero = () => {
         stagger: 0.2, // Add a stagger effect for a cascading appearance
         ease: "power3.out", // Smooth easing
       }
-    )
+    );
 
-     // Animate image transitions
-     const images = [
+    // Image Animation
+    const images = [
       "/assets/hero-work-1.jpeg",
       "/assets/hero-work-3.jpeg",
     ]; // Add the paths of the images you want to cycle through
     let currentImageIndex = 0;
 
+    // Cycle Images
     gsap.to(imageRef.current, {
       duration: 3,
       repeat: -1,
+      ease: "step.out",
       onRepeat: () => {
         currentImageIndex = (currentImageIndex + 1) % images.length; // Cycle through the images
         imageRef.current.src = images[currentImageIndex];
       },
-    })
-  
+    });
+
+    
   });
 
   return (
@@ -96,10 +99,10 @@ const Hero = () => {
         <div className="space-y-6 animate">
           <div className="flex items-center justify-center space-x-2 ">
             <span className="flex items-center w-48 px-4 py-2 font-semibold text-white bg-black justify-evenly rounded-xl h-14 ring-gray-300 ring-8">
-            <span className="relative flex w-4 h-4 ">
-              <span className="absolute inline-flex w-full h-full bg-gray-500 rounded-full opacity-75 animate-ping"></span>
-              <span className="relative inline-flex w-4 h-4 bg-gray-600 rounded-full"></span>
-            </span>
+              <span className="relative flex w-4 h-4 ">
+                <span className="absolute inline-flex w-full h-full bg-gray-500 rounded-full opacity-75 animate-ping"></span>
+                <span className="relative inline-flex w-4 h-4 bg-gray-600 rounded-full"></span>
+              </span>
               <a href="#contact">Contact Me</a>
             </span>
           </div>
