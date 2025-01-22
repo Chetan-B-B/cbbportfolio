@@ -14,12 +14,12 @@ const Work = () => {
                   <img
                     src={project.img1}
                     alt={`${project.name}`}
-                    className="absolute inset-0 object-cover w-full h-full"
+                    className="absolute inset-0 object-contain object-top w-full h-full bg-white"
                   />
                   <img
                     src= {project.img2}
                     alt="Overlay"
-                    className="absolute inset-0 object-cover w-full h-full transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                    className="absolute inset-0 w-full h-full transition-opacity duration-300 opacity-0 group-hover:opacity-100"
                   />
                 </div>
               </div>
