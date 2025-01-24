@@ -19,7 +19,7 @@ const Work = () => {
                   <img
                     src= {project.img2}
                     alt="Overlay"
-                    className="absolute inset-0 w-full h-full transition-opacity duration-500 opacity-0 group-hover:opacity-100  [transform:rotateY(180deg)] [backface-visibility:hidden]"
+                    className="absolute inset-0 w-full h-full transition-opacity duration-500 opacity-0 group-hover:opacity-100  [transform:rotateY(180deg)] [backface-visibility:hidden] object-contain bg-white"
                   />
                 </div>
               </div>

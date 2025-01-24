@@ -32,15 +32,15 @@ export const projects = [
   {
     id:2,
     name: "IaC Controller",
-    img1: "/assets/work/iac-mbl.png",
-    img2: "/assets/work/iac-tab.png",
+    img1: "/assets/work/iac-tab.png",
+    img2: "/assets/work/iac-mbl.png",
     tags: [ "AWS", "Terraform", "Docker"],
   },
   {
     id:3,
     name: "Forkify APP",
-    img1: "/assets/work/forkify-mbl.png",
-    img2: "/assets/work/forkify-tab.png",
+    img1: "/assets/work/forkify-tab.png",
+    img2: "/assets/work/forkify-mbl.png",
     tags: ["Javascript","MVC", "RESTAPI's"],
   },
   {
