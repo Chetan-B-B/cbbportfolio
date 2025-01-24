@@ -45,7 +45,7 @@ export const projects = [
   },
   {
     id:4,
-    name: "IaC Controller",
+    name: "Future Estate",
     img1: "/assets/work/realestate-mbl.png",
     img2: "/assets/work/realestate-tab.png",
     tags: ["React","Tailwindcss"],
