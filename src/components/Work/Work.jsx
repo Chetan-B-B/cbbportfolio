@@ -24,16 +24,21 @@ const Work = () => {
                 </div>
               </div>
               {/* Details Below Card */}
-              <div className="flex justify-between mt-4">
-                <h3 className="text-lg font-bold text-gray-500 group-hover:text-gray-900">
+              <div className="flex flex-wrap items-center justify-between mt-4">
+                <h3 className="text-lg font-bold text-gray-600 group-hover:text-gray-900">
                   {project.name}
                 </h3>
 
-                <p className="space-x-4 text-sm text-gray-200 group-hover:text-black ">
-                  {project.tags.map((tag, idx) => (
-                    <span key={idx} className="inline-block p-2 group-hover:bg-white bg-zinc-500 rounded-xl w-14 h-fit ">{ tag}</span>
-                  ))}
-                </p>
+                <div className="flex flex-wrap gap-2">
+                {project.tags.map((tag, idx) => (
+                  <span
+                    key={idx}
+                    className="inline-block px-3 py-1 text-sm text-gray-200 bg-gray-600 group-hover:bg-white rounded-xl group-hover:text-gray-900"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
               </div>
             </div>
           ))}
