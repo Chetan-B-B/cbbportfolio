@@ -27,7 +27,7 @@ const About = () => {
 
    // about-floaters is a custom screen breakpoint that we defined in tailwind.config.js
     return (
-      <section id="about" className="min-h-screen px-6 mt-10 font-portfolio">
+      <section id="about" className="min-h-screen px-6 mt-10 overflow-x-hidden font-portfolio">
         <div className="relative max-w-5xl mx-auto text-center">
           {/* Intro Text */}
                 <div className="text-gray-900">
@@ -39,38 +39,29 @@ const About = () => {
             </div>
             {/* https://codepen.io/akapowl/pen/zYRqbwm  -> tried this but didn't work 
             //TODO Update the description along with the labels */}
-            <h1 className="space-x-2 text-5xl font-normal leading-tight tracking-normal whitespace-pre-line md:text-6xl md:whitespace-normal">
-                  <span id="bro">I</span>
-                  <span id="bro">help</span>
-                  <span id="bro">startups</span>
-                  <span id="bro">and</span>
-                  <span id="bro">companies</span>
-                  <span id="bro">to</span>
-                  <br />
-                  <span id="bro">create</span>
-                  <span id="bro">a</span>
-                  <span id="bro">sense of</span>
-                  <span id="bro">connection</span>
-                  <br/>
-                  <span id="bro">between</span>
-                  <span id="bro">their</span>
-                  <span id="bro">products</span>
-                  <span id="bro">and</span>
-                  <span id="bro">happy</span>
-                  <br/>
-                  <span id="bro">engaged</span>
-                  <span id="bro">customers</span>
-            </h1>
+            <h1 className="text-3xl font-normal leading-snug tracking-normal break-words whitespace-normal sm:text-3xl md:text-4xl lg:text-5xl">
+            <span id="bro">I</span> <span id="bro">help</span> <span id="bro">startups</span> <span id="bro">and </span>
+            <span id="bro">companies</span> <span id="bro">to</span>
+            <br />
+            <span id="bro">create</span> <span id="bro">a</span> <span id="bro">sense of </span>
+            <span id="bro">connection</span>
+            <br />
+            <span id="bro">between</span> <span id="bro">their</span> <span id="bro">products</span> <span id="bro">and </span>
+            <span id="bro">happy</span>
+            <br />
+            <span id="bro">engaged</span> <span id="bro">customers</span>
+          </h1>
+
           </div>
   
           {/* Floating Labels */}
           <div className="relative mt-12">
             {/* Left Floating Labels */}
             <div className="space-y-6">
-              <span className="absolute left-0 px-4 py-2 text-sm font-medium bg-white rounded-full shadow-md xl:-top-80 -top-72 about-floaters:-top-80">
+              <span className="absolute left-0 px-4 py-2 text-sm font-medium bg-white rounded-full shadow-md xl:-top-80 -top-64 about-floaters:-top-56">
                 Design systems
               </span>
-              <span className="absolute px-4 py-2 text-sm font-medium bg-white rounded-full shadow-md left-10 md:-top-52 -top-44 about-floaters:-top-32">
+              <span className="absolute px-4 py-2 text-sm font-medium bg-white rounded-full shadow-md left-14 md:-top-52 -top-28 about-floaters:-top-32">
                 UI/UX
               </span>
               <span className="absolute px-4 py-2 text-sm font-medium bg-white rounded-full shadow-md left-20 -top-16 ">
@@ -80,10 +71,10 @@ const About = () => {
   
             {/* Right Floating Labels */}
             <div className="space-y-6 ">
-              <span className="absolute right-0 px-4 py-2 text-sm font-medium bg-white rounded-full shadow-md xl:-top-80 -top-72 about-floaters:-top-80">
+              <span className="absolute right-0 px-4 py-2 text-sm font-medium bg-white rounded-full shadow-md xl:-top-80 -top-64 about-floaters:-top-56">
                 Animation
               </span>
-              <span className="absolute px-4 py-2 text-sm font-medium bg-white rounded-full shadow-md right-10 md:-top-52 -top-44 about-floaters:-top-32">
+              <span className="absolute px-4 py-2 text-sm font-medium bg-white rounded-full shadow-md right-8 md:-top-52 -top-28 about-floaters:-top-32">
                 Prototyping
               </span>
               <span className="absolute px-4 py-2 text-sm font-medium bg-white rounded-full shadow-md right-20 -top-16">
