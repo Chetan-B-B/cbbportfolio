@@ -72,11 +72,14 @@ const Nav = () => {
             <a href="#" className="text-gray-700 hover:text-gray-900">
               Home
             </a>
+            <a href="#work" className="text-gray-700 hover:text-gray-900">
+              Projects
+            </a>
             <a href="#about" className="text-gray-700 hover:text-gray-900">
               About
             </a>
-            <a href="#work" className="text-gray-700 hover:text-gray-900">
-              Services
+            <a href="#experience" className="text-gray-700 hover:text-gray-900">
+            Experience
             </a>
             <a href="#contact" className="text-gray-700 hover:text-gray-900">
               Contact
