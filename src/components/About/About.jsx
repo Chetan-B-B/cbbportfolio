@@ -1,4 +1,26 @@
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
+import gsap from "gsap";
+gsap.registerPlugin(ScrollTrigger);
+
 const About = () => {
+  useGSAP(() => {
+    gsap.set("#bro", { opacity: 0.2 });
+    gsap.timeline({
+      scrollTrigger:{
+        trigger: '#bro',
+        scrub:0.3,
+        start:"top 40%",
+        end:"top 20%",
+        //markers:true
+      }
+   }).to("#bro", {
+     opacity: 1,
+     stagger: 0.2,
+    duration: 1,
+    delay: 1,
+    });
+  })
 
    // about-floaters is a custom screen breakpoint that we defined in tailwind.config.js
     return (
@@ -12,10 +34,29 @@ const About = () => {
 
                     <div className="bg-gradient-to-l from-gray-600/0 to-black/50 h-[2px] w-[69px] overflow-hidden opacity-50"/>
             </div>
-            {/* //TODO Update the description along with the labels */}
-            <h1 className="text-5xl font-normal leading-tight whitespace-pre-line md:text-6xl md:whitespace-normal">
-              I help startups and enterprises to <br/> establish an emotional connection <br/>
-              between their products and happy <br/> engaged customers
+            {/* https://codepen.io/akapowl/pen/zYRqbwm  -> tried this but didn't work 
+            //TODO Update the description along with the labels */}
+            <h1 className="space-x-2 text-5xl font-normal leading-tight tracking-normal whitespace-pre-line md:text-6xl md:whitespace-normal">
+                  <span id="bro">I</span>
+                  <span id="bro">help</span>
+                  <span id="bro">startups</span>
+                  <span id="bro">and</span>
+                  <span id="bro">companies</span>
+                  <span id="bro">to</span>
+                  <br />
+                  <span id="bro">create</span>
+                  <span id="bro">a</span>
+                  <span id="bro">sense of</span>
+                  <span id="bro">connection</span>
+                  <br/>
+                  <span id="bro">between</span>
+                  <span id="bro">their</span>
+                  <span id="bro">products</span>
+                  <span id="bro">and</span>
+                  <span id="bro">happy</span>
+                  <br/>
+                  <span id="bro">engaged</span>
+                  <span id="bro">customers</span>
             </h1>
           </div>
   
