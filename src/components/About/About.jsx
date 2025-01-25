@@ -1,5 +1,6 @@
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
+import Marquee from "react-fast-marquee";
 import gsap from "gsap";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -91,23 +92,30 @@ const About = () => {
   
           {/* Logos Section */}
           {/* This is called marquee effect in design jorgan  */}
-          <div className="relative flex mt-16 overflow-x-hidden text-base text-gray-400">
-          <div className="py-12 animate-marquee whitespace-nowrap">
-            <span className="mx-4">Javascript</span>
-            <span className="mx-4">Python</span>
-            <span className="mx-4">ReactJs</span>
-            <span className="mx-4">NodeJS</span>
-            <span className="mx-4">MongoDB</span>
-          </div>
-
-          <div className="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
-            <span className="mx-4">Javascript</span>
-            <span className="mx-4">Python</span>
-            <span className="mx-4">ReactJs</span>
-            <span className="mx-4">NodeJS</span>
-            <span className="mx-4">MongoDB</span>
-          </div>
-        </div>
+          <div className="relative flex items-center justify-center mt-16 overflow-x-hidden text-base text-gray-400">
+      {/* Center the Marquee */}
+      <Marquee
+        style={{
+          width: "100%",
+          maxWidth: "600px", // Adjust the max width for proper centering
+          wordSpacing: "20px",
+        }}
+        // gradient={true}
+        speed={40}
+        className="flex items-center"
+      >
+        {/* Add margin left for each span */}
+        <span className="ml-4">Python</span>
+        <span className="ml-4">Javascript</span>
+        <span className="ml-4">Java</span>
+        <span className="ml-4">NodeJs</span>
+        <span className="ml-4">ReactJS</span>
+        <span className="ml-4">MongoDB</span>
+        <span className="ml-4">AWS</span>
+        <span className="ml-4">Terraform</span>
+        <span className="ml-4">Jenkins</span>
+      </Marquee>
+    </div>
 
         </div>
       </section>
