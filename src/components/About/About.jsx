@@ -58,27 +58,27 @@ const About = () => {
           <div className="relative mt-12">
             {/* Left Floating Labels */}
             <div className="space-y-6">
-              <span className="absolute left-0 px-4 py-2 text-sm font-medium bg-white rounded-full shadow-md xl:-top-80 -top-64 about-floaters:-top-56">
-                Design systems
+              <span className="absolute left-0 px-4 py-2 text-base font-medium bg-white rounded-full shadow-md xl:-top-80 -top-64 about-floaters:-top-56 -rotate-6">
+                System designs 
               </span>
-              <span className="absolute px-4 py-2 text-sm font-medium bg-white rounded-full shadow-md left-14 md:-top-52 -top-28 about-floaters:-top-32">
-                UI/UX
+              <span className="absolute px-4 py-2 text-base font-medium bg-white rounded-full shadow-md left-14 md:-top-52 -top-28 about-floaters:-top-32 -rotate-4">
+                Web
               </span>
-              <span className="absolute px-4 py-2 text-sm font-medium bg-white rounded-full shadow-md left-20 -top-16 ">
-                Research
+              <span className="absolute px-4 py-2 text-base font-medium bg-white rounded-full shadow-md left-20 -top-16 ">
+                Cloud
               </span>
             </div>
   
             {/* Right Floating Labels */}
             <div className="space-y-6 ">
-              <span className="absolute right-0 px-4 py-2 text-sm font-medium bg-white rounded-full shadow-md xl:-top-80 -top-64 about-floaters:-top-56">
-                Animation
+              <span className="absolute right-0 px-4 py-2 text-base font-medium bg-white rounded-full shadow-md xl:-top-80 -top-64 about-floaters:-top-56 rotate-12">
+                Devops
               </span>
-              <span className="absolute px-4 py-2 text-sm font-medium bg-white rounded-full shadow-md right-8 md:-top-52 -top-28 about-floaters:-top-32">
-                Prototyping
+              <span className="absolute px-4 py-2 text-base font-medium bg-white rounded-full shadow-md rotate-4 right-6 md:-top-52 -top-28 about-floaters:-top-32">
+                Responsive
               </span>
-              <span className="absolute px-4 py-2 text-sm font-medium bg-white rounded-full shadow-md right-20 -top-16">
-                Strategy
+              <span className="absolute px-4 py-2 text-base font-medium bg-white rounded-full shadow-md right-20 -top-16">
+                Research
               </span>
             </div>
           </div>
