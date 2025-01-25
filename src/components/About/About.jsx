@@ -2,6 +2,8 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import Marquee from "react-fast-marquee";
 import gsap from "gsap";
+import { FaPython, FaJsSquare, FaJava, FaNodeJs, FaReact, FaAws, FaJenkins } from "react-icons/fa";
+import { SiMongodb, SiTerraform } from "react-icons/si";
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
@@ -92,31 +94,63 @@ const About = () => {
   
           {/* Logos Section */}
           {/* This is called marquee effect in design jorgan  */}
-          <div className="relative flex items-center justify-center mt-16 overflow-x-hidden text-base text-gray-400">
+          <div className="relative flex items-center justify-center overflow-x-hidden text-base text-gray-600 mt-28">
       {/* Center the Marquee */}
-      <Marquee
-        style={{
-          width: "100%",
-          maxWidth: "600px", // Adjust the max width for proper centering
-          wordSpacing: "20px",
-        }}
-        // gradient={true}
-        speed={40}
-        className="flex items-center"
-      >
-        {/* Add margin left for each span */}
-        <span className="ml-4">Python</span>
-        <span className="ml-4">Javascript</span>
-        <span className="ml-4">Java</span>
-        <span className="ml-4">NodeJs</span>
-        <span className="ml-4">ReactJS</span>
-        <span className="ml-4">MongoDB</span>
-        <span className="ml-4">AWS</span>
-        <span className="ml-4">Terraform</span>
-        <span className="ml-4">Jenkins</span>
-      </Marquee>
-    </div>
-
+          <Marquee
+            style={{
+              width: "100%",
+              maxWidth: "600px", 
+              wordSpacing: "20px",
+            }}
+            gradient={true}
+            speed={40}
+            gradientColor="#e5e7eb"
+            gradientWidth={30}
+            autoFill={true}
+            pauseOnHover={true}
+            pauseOnCLick={true}
+            className="flex items-center"
+                >
+                  
+            {/* Add icons with labels */}
+            <span className="flex items-center ml-4 space-x-2">
+              <FaPython size={24} className="text-blue-400" />
+              <span>Python</span>
+            </span>
+            <span className="flex items-center ml-4 space-x-2">
+              <FaJsSquare size={24} className="text-yellow-400" />
+              <span>Javascript</span>
+            </span>
+            <span className="flex items-center ml-4 space-x-2">
+              <FaJava size={24} className="text-red-400" />
+              <span>Java</span>
+            </span>
+            <span className="flex items-center ml-4 space-x-2">
+              <FaNodeJs size={24} className="text-green-400" />
+              <span>NodeJs</span>
+            </span>
+            <span className="flex items-center ml-4 space-x-2">
+              <FaReact size={24} className="text-blue-400" />
+              <span>ReactJS</span>
+            </span>
+            <span className="flex items-center ml-4 space-x-2">
+              <SiMongodb size={24} className="text-green-400" />
+              <span>MongoDB</span>
+            </span>
+            <span className="flex items-center ml-4 space-x-2">
+              <FaAws size={24} className="text-orange-400" />
+              <span>AWS</span>
+            </span>
+            <span className="flex items-center ml-4 space-x-2">
+              <SiTerraform size={24} className="text-purple-400" />
+              <span>Terraform</span>
+            </span>
+            <span className="flex items-center ml-4 space-x-2">
+              <FaJenkins size={24} className="text-blue-400" />
+              <span>Jenkins</span>
+            </span>
+          </Marquee>
+        </div>
         </div>
       </section>
     );
