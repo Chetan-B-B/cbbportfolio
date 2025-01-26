@@ -3,7 +3,7 @@ import { experiences, certificates } from "../../constants";
 const Experience = () => {
   
     return (
-      <section id="experience" className="min-h-screen px-6 font-portfolio">
+      <section id="experience" className="min-h-screen px-6 mt-6 font-portfolio">
         <div className="mx-auto max-w-7xl">
           {/* Section Header */}
           <div className="text-center">
@@ -34,7 +34,7 @@ const Experience = () => {
             ))}
           </div>
           {/* Certificates */}
-          <div className="text-center">
+          <div className="mt-6 text-center">
           <div className="flex items-center justify-center space-x-3">
                     <div className=" bg-gradient-to-r from-gray-600/0 to-black/50  h-[2px] w-[69px] overflow-hidden opacity-50"/>
                     <p className="text-lg italic font-normal  text-[#00000080]">Certificates</p>
@@ -56,7 +56,7 @@ const Experience = () => {
                 <div className="flex items-center md:justify-self-end">
                 <a
                   href={cer.link}
-                  className="text-gray-600 group-hover:text-gray-800 transition-all duration-500 underline underline-offset-[2px] decoration-transparent group-hover:decoration-gray-800 cursor-pointer "
+                  className="relative text-gray-600 group-hover:text-gray-800 transition-all duration-500 cursor-pointer before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:bg-gray-800 before:w-0 before:transition-all before:duration-500 group-hover:before:w-full"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
