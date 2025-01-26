@@ -1,3 +1,13 @@
+import depMbl from "../../public/assets/work/dep-mbl.png"
+import depTab from "../../public/assets/work/dep-tab.png"
+import iacTab from "../../public/assets/work/iac-tab.png"
+import iacMbl from "../../public/assets/work/iac-mbl.png"
+import forkifyTab from "../../public/assets/work/forkify-tab.png"
+import forkifyMbl from "../../public/assets/work/forkify-mbl.png"
+import realestateMbl from "../../public/assets/work/realestate-mbl.png"
+import realestateTab from "../../public/assets/work/realestate-tab.png"
+
+
 export const navLinks = [
   {
     id: 1,
@@ -25,29 +35,29 @@ export const projects = [
   {
     id:1,
     name: "Digital Enablement Platform",
-    img1: "/assets/work/dep-mbl.png",
-    img2: "/assets/work/dep-tab.png",
+    img1: depMbl,
+    img2: depTab,
     tags: ["Python","Flask","MonogDB"],
   },
   {
     id:2,
     name: "IaC Controller",
-    img1: "/assets/work/iac-tab.png",
-    img2: "/assets/work/iac-mbl.png",
+    img1: iacTab,
+    img2: iacMbl,
     tags: [ "AWS", "Terraform", "Docker"],
   },
   {
     id:3,
     name: "Forkify APP",
-    img1: "/assets/work/forkify-tab.png",
-    img2: "/assets/work/forkify-mbl.png",
+    img1: forkifyTab,
+    img2: forkifyMbl,
     tags: ["Javascript","MVC", "RESTAPI's"],
   },
   {
     id:4,
     name: "Future Estate",
-    img1: "/assets/work/realestate-mbl.png",
-    img2: "/assets/work/realestate-tab.png",
+    img1: realestateMbl,
+    img2: realestateTab,
     tags: ["React","Tailwindcss"],
   },
 ]

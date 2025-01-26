@@ -1,6 +1,10 @@
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import heroImg from "../../../public/assets/hero-me-6.png"
+import heroWork1 from "../../../public/assets/hero-work-1.jpeg"
+import heroWork2 from "../../../public/assets/hero-work-3.jpeg"
+import heroBng from "../../../public/assets/bng.jpg"
 
 const Hero = () => {
   const heroRef = useRef();
@@ -22,7 +26,7 @@ const Hero = () => {
       }
     );
 
-    const images = ["/assets/hero-work-1.jpeg", "/assets/hero-work-3.jpeg"];
+    const images = [heroWork1,heroWork2];
     let currentImageIndex = 0;
 
     gsap.to(imageRef.current, {
@@ -62,7 +66,7 @@ const Hero = () => {
               Chetan
             </span>
             <img
-              src="/assets/hero-me-6.png"
+              src={heroImg}
               alt="Me"
               className="inline-block object-contain w-16 h-12 sm:w-20 sm:h-16 md:w-28 md:h-20 lg:w-32 lg:h-20 align-middle bg-[#c3c8d7] border-4 border-black shadow-lg rounded-xl"
             />
@@ -75,7 +79,7 @@ const Hero = () => {
             </span>
             <img
               ref={imageRef}
-              src="/assets/hero-work-1.jpeg"
+              src={heroWork1}
               alt="Dev"
               className="inline-block object-cover object-top w-16 h-12 mb-3 mr-3 align-middle transition-transform border-4 border-black shadow-lg sm:w-20 sm:h-16 md:w-28 md:h-20 lg:w-32 lg:h-20 rounded-xl"
             />
@@ -84,7 +88,7 @@ const Hero = () => {
           <span className="block">
             based in <span className="">Bengaluru</span>
             <img
-              src="/assets/bng.jpg"
+              src={heroBng}
               alt="Bengaluru"
               className="inline-block object-fill object-bottom w-16 h-12 align-middle border-4 border-black shadow-lg sm:w-20 sm:h-16 md:w-28 md:h-20 lg:w-32 lg:h-20 rounded-xl"
             />
