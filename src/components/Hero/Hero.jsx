@@ -8,44 +8,40 @@ const Hero = () => {
 
   useGSAP(() => {
     gsap.fromTo(
-      heroRef.current.querySelectorAll(".animate"), // Select elements with the 'animate' class within heroRef
+      heroRef.current.querySelectorAll(".animate"),
       {
-        opacity: 0, // Start with opacity 0
-        y: 100,      // Start below their original position
+        opacity: 0,
+        y: 100,
       },
       {
-        opacity: 1, // End with opacity 1
-        y: 0,       // Move to their original position
-        duration: 1, // Animation duration for each element
-        stagger: 0.2, // Add a stagger effect for a cascading appearance
-        ease: "power3.out", // Smooth easing
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power3.out",
       }
     );
 
-    // Image Animation
-    const images = [
-      "/assets/hero-work-1.jpeg",
-      "/assets/hero-work-3.jpeg",
-    ]; // Add the paths of the images you want to cycle through
+    const images = ["/assets/hero-work-1.jpeg", "/assets/hero-work-3.jpeg"];
     let currentImageIndex = 0;
 
-    // Cycle Images
     gsap.to(imageRef.current, {
       duration: 3,
       repeat: -1,
       ease: "step.out",
       onRepeat: () => {
-        currentImageIndex = (currentImageIndex + 1) % images.length; // Cycle through the images
+        currentImageIndex = (currentImageIndex + 1) % images.length;
         imageRef.current.src = images[currentImageIndex];
       },
     });
-
-    
   });
 
   return (
-    <main ref={heroRef} className="flex flex-col items-center justify-center min-h-screen ">
-      {/* //TODO This is the  gradient effect , it is incomplete you can continue if you want*/}
+    <main
+      ref={heroRef}
+      className="flex flex-col items-center justify-center min-h-screen p-4 sm:p-6 lg:p-8"
+    >
+        {/* //TODO This is the  gradient effect , it is incomplete you can continue if you want*/}
         {/* <div
         className="absolute z-10 w-[900px] h-full left-[215px]"
         style={{
@@ -59,22 +55,29 @@ const Hero = () => {
       ></div> */}
       <div className="max-w-4xl px-6 text-center">
         {/* Hero Heading */}
-        <h1 className="text-[5rem] font-normal font-portfolio leading-tight mb-6 animate">
+        <h1 className="text-[2.5rem] sm:text-[3.5rem] md:text-[4rem] lg:text-[5rem] font-normal font-portfolio leading-tight mb-6 animate">
           <span className="block">
-            I&apos;m <span className="italic text-transparent bg-gradient-to-r from-neutral-300 via-neutral-500 to-stone-400 bg-clip-text">Chetan</span>
+            I&apos;m
+            <span className="italic text-transparent bg-gradient-to-r from-neutral-300 via-neutral-500 to-stone-400 bg-clip-text">
+              Chetan
+            </span>
             <img
               src="/assets/hero-me-6.png"
               alt="Me"
-              className="inline-block object-contain w-32 h-20 align-middle bg-[#c3c8d7] border-4 border-black shadow-lg rounded-xl"
-            />,
+              className="inline-block object-contain w-16 h-12 sm:w-20 sm:h-16 md:w-28 md:h-20 lg:w-32 lg:h-20 align-middle bg-[#c3c8d7] border-4 border-black shadow-lg rounded-xl"
+            />
+            ,
           </span>
           <span className="block">
-            a <span className="italic text-transparent bg-gradient-to-r from-neutral-300 via-neutral-500 to-stone-400 bg-clip-text">Full Stack </span>
+            {"a "}
+            <span className="italic text-transparent bg-gradient-to-r from-neutral-300 via-neutral-500 to-stone-400 bg-clip-text">
+              Full Stack
+            </span>
             <img
-            ref={imageRef}  
+              ref={imageRef}
               src="/assets/hero-work-1.jpeg"
               alt="Dev"
-              className="inline-block object-cover object-top w-32 h-20 mb-3 mr-3 align-middle transition-transform border-4 border-black shadow-lg rounded-xl"
+              className="inline-block object-cover object-top w-16 h-12 mb-3 mr-3 align-middle transition-transform border-4 border-black shadow-lg sm:w-20 sm:h-16 md:w-28 md:h-20 lg:w-32 lg:h-20 rounded-xl"
             />
             Developer
           </span>
@@ -83,7 +86,7 @@ const Hero = () => {
             <img
               src="/assets/bng.jpg"
               alt="Bengaluru"
-              className="inline-block object-fill object-bottom w-32 h-20 align-middle border-4 border-black shadow-lg rounded-xl"
+              className="inline-block object-fill object-bottom w-16 h-12 align-middle border-4 border-black shadow-lg sm:w-20 sm:h-16 md:w-28 md:h-20 lg:w-32 lg:h-20 rounded-xl"
             />
           </span>
         </h1>
@@ -97,13 +100,14 @@ const Hero = () => {
 
         {/* Contact Section */}
         <div className="space-y-6 animate">
-          <div className="flex items-center justify-center space-x-2 ">
-            <span className="flex items-center w-48 px-4 py-2 font-semibold text-white bg-black justify-evenly rounded-xl h-14 ring-gray-300 ring-8">
-              <span className="relative flex w-4 h-4 ">
+          <div className="flex items-center justify-center ">
+            <span className="flex items-center w-full sm:w-[70%] md:w-64 px-4 py-2 font-semibold text-white bg-black justify-evenly rounded-xl h-14 ring-gray-300 ring-8">
+            <a href="#contact" className="flex items-center gap-x-2">
+              <span className="relative flex w-4 h-4">
                 <span className="absolute inline-flex w-full h-full bg-gray-500 rounded-full opacity-75 animate-ping"></span>
                 <span className="relative inline-flex w-4 h-4 bg-gray-600 rounded-full"></span>
               </span>
-              <a href="#contact">Contact Me</a>
+              Contact Me</a>
             </span>
           </div>
         </div>
