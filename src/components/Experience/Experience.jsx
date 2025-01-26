@@ -47,12 +47,28 @@ const Experience = () => {
             {certificates.map((cer, index) => (
               <div
                 key={index}
-                    className="grid items-center grid-cols-1 py-4 text-xl font-medium capitalize border-b border-gray-300 md:grid-cols-2 last:border-none"
+                    className="grid items-center grid-cols-1 py-4 text-xl font-medium capitalize border-b border-gray-300 md:grid-cols-3 last:border-none group"
               >
                 {/* Role */}
                 <p className="text-gray-600">{cer.name}</p>
                 {/* Duration */}
-                <p className="text-gray-600 md:justify-self-end">{cer.platform}</p>
+                <p className="text-gray-600 md:justify-self-center ">{cer.platform}</p>
+                <div className="flex items-center md:justify-self-end">
+                <a
+                  href={cer.link}
+                  className="text-gray-600 group-hover:text-gray-800 transition-all duration-500 underline underline-offset-[2px] decoration-transparent group-hover:decoration-gray-800 cursor-pointer "
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Certificate
+                </a>
+                <img
+                  src="assets/arraow.svg"
+                  alt="arraow"
+                  className="w-5 h-5 filter brightness-150 invert"
+                />
+                
+              </div>
               </div>
             ))}
           </div>

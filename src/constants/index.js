@@ -59,16 +59,16 @@ export const experiences = [
 
 export const certificates = [
   {
-    name: "Ultimate AWS Certified CloudPractitioner CLF-C02 ", platform: "Udemey", link:"https://www.udemy.com/certificate/UC-2960e137-8a92-4b1a-adf8-bef53d0cfd14/"
+    name: "Ultimate AWS Certified CloudPractitioner CLF-C02 ", platform: "Udemy", link:"https://www.udemy.com/certificate/UC-2960e137-8a92-4b1a-adf8-bef53d0cfd14/"
   },
   {
-    name: "Terraform for the Absolute Beginners with Lab", platform: "Udemey",
+    name: "Terraform for the Absolute Beginners with Lab", platform: "Udemy",
     link: "https://www.udemy.com/certificate/UC-27ff33ff-b1ec-4501-807d-f9a7111f41ae/"
   },
   {
-    name: "MongoDB - The Complete Developer's Guide 2023", platform: "Udemey",link:"https://www.udemy.com/certificate/UC-9f940708-5f82-47ca-86e3-ebc2dd26d07f/"
+    name: "MongoDB - The Complete Developer's Guide 2023", platform: "Udemy",link:"https://www.udemy.com/certificate/UC-9f940708-5f82-47ca-86e3-ebc2dd26d07f/"
   },
   {
-    name: "Docker & Kubernetes: The Practical Guide |2023 Edition", platform: "Udemey",link:"https://www.udemy.com/certificate/UC-186eab40-670e-4c63-8ed5-5fc7c630fbdd/"
+    name: "Docker & Kubernetes: The Practical Guide |2023 Edition", platform: "Udemy",link:"https://www.udemy.com/certificate/UC-186eab40-670e-4c63-8ed5-5fc7c630fbdd/"
   },
 ]
