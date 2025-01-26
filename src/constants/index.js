@@ -81,4 +81,7 @@ export const certificates = [
   {
     name: "Docker & Kubernetes: The Practical Guide |2023 Edition", platform: "Udemy",link:"https://www.udemy.com/certificate/UC-186eab40-670e-4c63-8ed5-5fc7c630fbdd/"
   },
+  {
+    name: "Online feature Selection using Pearson Correlation Technique", platform: "IEEE Publications",link:"https://ieeexplore.ieee.org/document/10054267"
+  },
 ]
