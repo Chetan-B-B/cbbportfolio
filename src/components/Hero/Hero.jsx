@@ -97,7 +97,7 @@ const Hero = () => {
 
         {/* Hero Subtext */}
         <p className="mb-8 text-lg text-gray-600 animate">
-          I have 3 years of experience crafting scalable backend solutions and
+          I have 4 years of experience crafting scalable backend solutions and
           automating infrastructure to deliver impactful, efficient products for
           businesses.
         </p>
