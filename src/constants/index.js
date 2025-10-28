@@ -63,7 +63,7 @@ export const projects = [
 ]
 
 export const experiences = [
-  { role: "Software Engg 1. ", company: "Astuto.ai", duration: "July 2025 → Now" },
+  { role: "Software Development Engg 1. ", company: "Astuto.ai", duration: "July 2025 → Now" },
   { role: "Associate Software Engg. ", company: "Altimetrik", duration: "December 2022 → July 2025" },
   { role: "Project Intern", company: "Altimetrik", duration: "March 2022 → December 2022" },
 ];
