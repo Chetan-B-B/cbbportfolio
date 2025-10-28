@@ -29,7 +29,7 @@ const Experience = () => {
                 <p className="text-gray-800 md:justify-self-center">{exp.company}</p>
   
                 {/* Duration */}
-                <p className="text-gray-600 md:justify-self-end">{exp.duration}</p>
+                <p className="text-gray-600 md:justify-self-end italic">{exp.duration}</p>
               </div>
             ))}
           </div>

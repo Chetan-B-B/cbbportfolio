@@ -3,7 +3,7 @@ import Contact from "./components/Contact/Contact";
 import Experience from "./components/Experience/Experience";
 import Hero from "./components/Hero/Hero";
 import Nav from "./components/Nav/Nav";
-import Work from "./components/work/work";
+import Work from "./components/Work/Work";
 
 export default function App() {
   return (
